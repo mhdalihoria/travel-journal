@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    color: #2B283A;
+}
+
+/* Nav styling */
+.nav {
+    background: #f55a5a;
+    color: white;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+}
+
+/* Globe icon styling */
+.fa-earth-europe {
+    font-size: 1.5rem;
+    padding-right: .3em;
+
+}
+
+/* List of cards as a container styling */
+.card-container {
+    width: 80%;
+    margin: auto;
+}
+
+/* The styling of each card component */
+.card {
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #F5F5F5;
+    margin: 2rem auto 1rem;
+}
+
+.card--left {
+    border-radius: 5px;
+    margin-bottom: 1.7rem;
+}
+
+.card--right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card country and location styling */
+.card--right--country {
+    margin-bottom: .6rem;
+    font-size: .9rem;
+}
+
+/* Path Icon styling */
+.fa-location-dot { 
+    color:  #f55a5a;
+    margin-right: 5px;
+}
+
+/* Card location link styling */
+.card--right--country__location-link {
+    margin-left: 12px;
+}
+
+.card--right--country__location-link a {
+    color: #918E9B;
+}
+.card--right--country__location-link a:hover {
+    color: #716F77;
+}
+
+/* Card right title */
+.card--right--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin-top: .2em;
+    margin-bottom: 1.1em;
+}
+
+/* Start date and End date styling*/
+.country--right--date {
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+/* Card paragraph styling */
+.country--right-desc {
+    margin: 0 0 2rem;
+
+    font-size: .7rem;
+    line-height: 1rem;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 700px) {
+
+    .nav {
+        margin-bottom: 5rem;
+    
+    }
+
+    .card-container {
+        max-width: 900px;
+    }
+
+    .card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card--left {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .card--right {
+        width: 65%;
+        padding: 1rem 0;
+
+        justify-content: space-around;
+    }
+
+    .card--right--country {
+        font-size: 1rem;
+    }
+
+    .card--right--title {
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+
+    .country--right--date {
+        font-size: 1.03rem;
+    }
+
+    .country--right-desc {
+        font-size: .9rem;
+        letter-spacing: 1.5px;
+    }
+}
+
