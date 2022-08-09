@@ -35,7 +35,7 @@ body {
 /* The styling of each card component */
 .card {
     display: grid;
-    grid-template: 40% 5% 15% 10% 30% / 100%;
+    grid-template: 55% 5% 15% 10% 30% / 100%;
     grid-template-areas: 
     "image"
     "location"
@@ -115,6 +115,32 @@ body {
     letter-spacing: 1px;
 }
 
+@media (min-width: 500px) {
+    .card {
+        grid-template: 60% 5% 15% 10% 30% / 100%;
+        grid-template-areas: 
+        "image"
+        "location"
+        "title"
+        "date"
+        "paragraph";
+      
+    }
+}
+
+@media (min-width: 612px) {
+    .card {
+        grid-template: 65% 5% 15% 10% 30% / 100%;
+        grid-template-areas: 
+        "image"
+        "location"
+        "title"
+        "date"
+        "paragraph";
+      
+    }
+}
+
 @media (min-width: 700px) {
 
     .nav {
@@ -127,7 +153,7 @@ body {
     }
 
     .card {
-        grid-template: 15% 28% 12% 45% / 35% 100%;
+        grid-template: 105% 28% 12% 45% / 35% 100%;
         grid-template-areas: 
         "image location"
         "image title"
@@ -138,8 +164,8 @@ body {
     }
 
     .card--left {
-        height: 90%;
-        width: 86%;
+        height: 50%;
+        width: 80%;
         object-fit: cover;
     }
 
